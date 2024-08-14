@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CARDS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color:beige;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background-color:bisque;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            padding: 10px;
+            transition: transform 0.2s;
+            text-align: center;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-content {
+            display: none;
+            margin-top: 10px;
+            font-size: 14px;
+            color:black;
+        }
+        .card.open .card-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="card" onclick="toggleCard(this)">
+        <h3>HTML</h3>
+        <div class="card-content">
+            <p>INTRODUCTION TO CSS</p>
+        </div>
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+        <h3>INTRODUCTION</h3>
+        <div class="card-content">
+            <p>CSS is the language we use to style an HTML document.
+
+                CSS describes how HTML elements should be displayed.
+                
+                This tutorial will teach you CSS from basic to advanced.</p>
+        </div>
+    </div>
+   
+    <div class="card" onclick="toggleCard(this)">
+        <h3>OUTLINE</h3>
+        <div class="card-content">
+            <p>An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element</p>
+        </div>
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+        <h3>SELECTORS</h3>
+        <div class="card-content">
+            <p>A CSS selector selects the HTML element(s) you want to style.</p>
+        </div>
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+        <h3>HTML</h3>
+        <div class="card-content">
+            <p>CSS is the language we use to style an HTML document.
+
+                CSS describes how HTML elements should be displayed.
+                
+                This tutorial will teach you CSS from basic to advanced.</p>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+        <h3>MENU</h3>
+        <div class="card-content">
+            <p>We recommend reading this tutorial, in the sequence listed in the menu.
+
+                If you have a large screen, the menu will always be present on the left.
+                
+                If you have a small screen, open the menu by clicking the top menu sign</p>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+        <h3>TOP MENU</h3>
+        <div class="card-content">
+            <p>If you have a small screen, open the menu by clicking the top menu sign</p>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+        <h3>FONTS</h3>
+        <div class="card-content">
+            <p>The simplest way to add an icon to your HTML page, is with an icon library, such as Font Awesome.
+
+                Add the name of the specified icon class to any inline HTML element (like <i> or <span>).
+                
+                All the icons in the icon libraries below, are scalable vectors that can be customized with CSS (size, color, shadow, etc.)</p>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+        <h3>ICONS</h3>
+        <div class="card-content">
+            <p>The simplest way to add an icon to your HTML page, is with an icon library, such as Font Awesome.
+
+                Add the name of the specified icon class to any inline HTML element (like <i> or <span>).
+                
+                All the icons in the icon libraries below, are scalable vectors that can be customized with CSS (size, color, shadow, etc.)
+                </p>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+        <h3>TYPES</h3>
+        <div class="card-content">
+            <p>There are four different combinators in CSS:
+
+                descendant selector (space)
+                child selector (>)
+                adjacent sibling selector (+)
+                general sibling selector (~)</p>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+        <h3>MARGINS</h3>
+        <div class="card-content">
+            <p>To horizontally center a block element (like <div>), use margin: auto;
+
+                Setting the width of the element will prevent it from stretching out to the edges of its container.
+                
+                The element will then take up the specified width, and the remaining space will be split equally between the two margins</p>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+        <h3>THANKU</h3>
+        <div class="card-content">
+            <p>THANKU</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleCard(card) {
+        card.classList.toggle('open');
+    }
+</script>
+
+</body>
+</html>
